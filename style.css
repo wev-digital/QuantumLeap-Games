@@ -1,0 +1,112 @@
+/* Estilos para o corpo da página */
+body {
+    background-image: url(https://media3.giphy.com/media/WpUF5M8p1nWTxgCoIp/giphy.gif?cid=6c09b952str3noyn6af1fd9dlhu8ns9fkeka6fn9of6bmr3b&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g);
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área disponível */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    height: 600px; /* Define a altura do corpo como 600 pixels */
+}
+
+/* Estilos para o elemento com a classe .total */
+.total {
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/024/538/828/original/pixel-jeff-clipc-s.gif?1582740521&dl=1);
+    background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área disponível */
+    border: solid 5px white; /* Define uma borda sólida de 5 pixels de largura e cor branca */
+    border-radius: 30px; /* Aplica cantos arredondados com um raio de 30 pixels */
+    width: 1000px; /* Define a largura do elemento como 1000 pixels */
+    height: 500px; /* Define a altura do elemento como 500 pixels */
+    position: fixed; /* Define a posição fixa do elemento na tela */
+    top: 50%; /* Define que o topo do elemento estará posicionado no centro vertical da tela */
+    left: 50%; /* Define que a esquerda do elemento estará posicionado no centro horizontal da tela */
+    transform: translate(-50%,-50%); /* Usa a função translate para centralizar precisamente o elemento na tela */
+    text-align: center; /* Centraliza o conteúdo dentro do elemento */
+    animation: bordacolor 10s linear infinite; /* Aplica uma animação chamada 'bordacolor' com duração de 10 segundos, movimento linear e repetição infinita */
+}
+
+/* Estilos para o conteúdo dentro do elemento .total */
+.conteudo {
+    padding: 20px; /* Define um espaçamento interno de 20 pixels dentro do elemento */
+    border-radius: 8px; /* Aplica cantos arredondados com um raio de 8 pixels */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do elemento */
+    max-width: 300px; /* Define a largura máxima do elemento como 300 pixels */
+    width: 100%; /* Garante que o elemento ocupe toda a largura disponível do seu contêiner */
+}
+
+/* Estilos para o título h1 dentro do elemento .conteudo */
+h1 {
+    margin-bottom: 20px; /* Define uma margem inferior de 20 pixels para o título */
+    color: white; /* Define a cor do texto como branca */
+    animation: textocolor 10s linear infinite; /* Aplica uma animação chamada 'textocolor' ao título */
+}
+
+/* Estilos para inputs e botões dentro do elemento .conteudo */
+input, button {
+    background-color: transparent; /* Define o fundo como transparente */
+    width: calc(100% - 20px); /* Define a largura como 100% menos 20 pixels */
+    padding: 10px; /* Define o preenchimento interno como 10 pixels */
+    margin-bottom: 15px; /* Define a margem inferior como 15 pixels */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+    border: 3px solid white; /* Define uma borda sólida de 3 pixels de largura e cor branca */
+    border-radius: 5px; /* Aplica cantos arredondados com um raio de 5 pixels */
+    color: white; /* Define a cor do texto como branca */
+    transition: 1s ease; /* Aplica uma transição suave com duração de 1 segundo */
+    animation: bordacolor 10s linear infinite; /* Aplica uma animação chamada 'bordacolor' aos inputs e botões */
+}
+
+/* Estilos para links dentro do elemento .conteudo */
+a {
+    display: block; /* Transforma o link em um bloco */
+    color: white; /* Define a cor do texto como branca */
+    font-size: 14px; /* Define o tamanho da fonte como 14 pixels */
+    text-decoration: none; /* Remove a decoração de texto (sublinhado) */
+    margin-bottom: 15px; /* Define a margem inferior como 15 pixels */
+    text-align: right; /* Alinha o texto à direita */
+    animation: textocolor 10s linear infinite; /* Aplica uma animação chamada 'textocolor' ao link */
+}
+
+/* Estilos para botões dentro do elemento .conteudo */
+button {
+    width: 100%; /* Define a largura como 100% */
+    padding: 10px; /* Define o preenchimento interno como 10 pixels */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar por cima */
+    margin-bottom: 10px; /* Define a margem inferior como 10 pixels */
+}
+
+/* Efeito de hover para botões */
+button:hover {
+    transform: scale(1.05); /* Aplica um aumento de escala ao botão ao passar o mouse sobre ele */
+}
+
+/* Animação para mudança de cor da borda */
+@keyframes bordacolor {
+    0%    { border-color: #ff0000; }   /* Vermelho */
+    10%   { border-color: #ffa500; }   /* Laranja */
+    20%   { border-color: #ffff00; }   /* Amarelo */
+    30%   { border-color: #008000; }   /* Verde */
+    40%   { border-color: #0000ff; }   /* Azul */
+    50%   { border-color: #4b0082; }   /* Anil */
+    60%   { border-color: #ee82ee; }   /* Violeta */
+    70%   { border-color: #000000; }   /* Preto */
+    80%   { border-color: #ffffff; }   /* Branco */
+    90%   { border-color: #808080; }   /* Cinza */
+    100%  { border-color: #a52a2a; }   /* Marrom */
+}
+
+/* Animação para mudança de cor do texto */
+@keyframes textocolor {
+    0%    { color: #ff0000; }   /* Vermelho */
+    10%   { color: #ffa500; }   /* Laranja */
+    20%   { color: #ffff00; }   /* Amarelo */
+    30%   { color: #008000; }   /* Verde */
+    40%   { color: #0000ff; }   /* Azul */
+    50%   { color: #4b0082; }   /* Anil */
+    60%   { color: #ee82ee; }   /* Violeta */
+    70%   { color: #000000; }   /* Preto */
+    80%   { color: #ffffff; }   /* Branco */
+    90%   { color: #808080; }   /* Cinza */
+    100%  { color: #a52a2a; }   /* Marrom */
+}
